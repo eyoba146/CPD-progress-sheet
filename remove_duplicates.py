@@ -10,6 +10,8 @@ class Solution:
             else:
                 dictt[nums[i]] = 1
                 corrected_nums.append(nums[i])
+                
         for i in range(len(corrected_nums)):
             nums[i] = corrected_nums[i]
+            
         return len(corrected_nums)
