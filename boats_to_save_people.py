@@ -5,12 +5,6 @@ class Solution:
         right = len(people)-1
         boat_count = 0
         while left <= right:
-            if people[left] >= limit:
-                boat_count+=1
-                left+=1
-            if people[right] >= limit:
-                boat_count+=1
-                right-=1
             if left == right:
                 boat_count+=1
                 break
@@ -27,5 +21,3 @@ class Solution:
                 left+=1
                 right-=1
         return boat_count
-
-        
