@@ -11,13 +11,11 @@ class Solution:
             if people[left]+people[right] > limit:
                 if limit-people[right] <= people[left]:
                     boat_count+=1
-                    right-=1
                 else:
                     boat_count+=2
                     left+=1
-                    right-=1
             if people[left]+people[right] <= limit:
                 boat_count+=1
                 left+=1
-                right-=1
+            right-=1
         return boat_count
