@@ -1,0 +1,10 @@
+class Solution:
+    def minimumSteps(self, s: str) -> int:
+        ones = 0
+        steps = 0
+        for i in s:
+            if i == '1':
+                ones += 1
+            else:
+                steps += ones
+        return steps
